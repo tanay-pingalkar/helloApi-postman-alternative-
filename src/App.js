@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function App() {
   const [baseUrl,setbaseUrl]=useState('');
-  const [method, setmethod] = useState('Post');
+  const [method, setmethod] = useState('post');
   const [dropdown, setdropdown] = useState('lie');
   const [methodStyle,setMStyle]= useState('method');
   const [reqjson,setreqjson]=useState();
