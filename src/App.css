@@ -1,38 +1,159 @@
-.App {
+.App{
+  padding-left:30vh;
+  padding-top:30vh;
+}
+.input input{
+  padding:8px;
+  position: absolute;
+  width:300px;
+  left:22%;
+  border:none;
+  height:21px;
+  border-radius: 5px;
+}
+.input{
+  display:flex;
+}
+.method{
+  background-color: white;
+  color:black;
+  width:60px;
+  user-select: none;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  padding:8px;
   text-align: center;
+  margin-right: 10px;
+}
+.methodClicked{
+  background-color: rgb(40, 9, 68);
+  color:rgb(255, 255, 255);
+  width:60px;
+  user-select: none;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  padding:8px;
+  text-align: center;
+  margin-right: 10px;
+}
+.method:hover, .method2:hover{
+  background-color: rgb(40, 9, 68);
+  color:white;
+}
+.angledown{
+  margin-left: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dropdown{
+  background-color: white;
+  animation: increH 0.15s ease-in-out forwards;
+  width:77px;
+  border-radius: 5px;
+  padding:1px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes increH{
+  0%{
+    height:6vh;
+    overflow: hidden;
+  }
+  99%{
+    height:17vh;
+    overflow: hidden;
+  }
+  100%{
+    height:23.5vh;
+    overflow: hidden;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.lie{
+  height: 37px;
+  overflow:hidden;
+  
+}
+.lol{
+  margin-right: 20px;
+}
+.method2{
+  background-color: white;
+  color:black;
+  width:60px;
+  margin-top: 1px;
+  user-select: none;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  padding:8px;
+  text-align: center;
+  margin-right: 10px;
+}
+.App h1{
+  display: inline;
+  color:white;
+  border-bottom: 2px solid white;
+  position: absolute;
+  top:10%;
+  width:20px;
+  transition:0.2s ease;
+  padding-bottom: 2px;
+  user-select: none;
+}
+.App h1:hover{
+  width:120px;
+}
+.textarea1{
+  height: 200px;
+  width: 417px;
+  margin-top: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+  border:none;
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+.ok{
+  width:417px;
+}
+.ok button{
+  border-radius: 5px;
+  width:75px;
+  border:none;
+  background-color: rgb(22, 97, 22);
+  color:white;
+  padding:10px;
+  margin-top:2px;
+}
+.ok button:hover{
+  background-color: rgb(9, 88, 9);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.response{
+  position: absolute;
+  top:10%;
+  left: 50%;
+}
+.response textarea{
+  position: absolute;
+  top:26vh;
+  height: 200px;
+  width: 417px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  outline: none;
+}
+.clear{
+  position: absolute;
+  top:58vh;
+  border-radius: 5px;
+  width:75px;
+  border:none;
+  color:white;
+  padding:10px;
+  background-color: rgb(185, 19, 19);
+}
+
+.status{
+  position:absolute;
+  top: 16vh;
+  color:white;
+  width: 200px;
 }
